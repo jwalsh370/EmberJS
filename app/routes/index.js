@@ -4,16 +4,16 @@ export default Ember.Route.extend({
 
   model() {
     return Ember.RSVP.hash({
-      blogs: this.store.findAll('blog'),
-      // blogs: this.store.findRecord('blog', params.blog_id)
+      helpers: this.store.findAll('helper'),
+      // helpers: this.store.findRecord('helper', params.helper_id)
     });
   },
 
   actions: {
-    saveBlog(params) {
-      var newBlog = this.store.createRecord('blog', params);
-      newBlog.save();
-      this.transitionTo('blog');
+    saveHelper(params) {
+      var newHelper = this.store.createRecord('helper', params);
+      newHelper.save();
+      this.transitionTo('helper');
    }
  }
 });

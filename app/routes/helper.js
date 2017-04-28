@@ -3,23 +3,23 @@ import Ember from 'ember';
 export default Ember.Route.extend({
 
   model(params) {
-    return this.store.findRecord('blog', params.blog_id);
+    return this.store.findRecord('helper', params.helper_id);
    },
 
     actions: {
-      updateBlog(blog, params) {
+      updateHelper(helper, params) {
         debugger;
         Object.keys(params).forEach(function(key) {
           if(params[key]!==undefined) {
-            blog.set(key,params[key]);
+            helper.set(key,params[key]);
           }
         });
-        blog.save();
-        this.transitionTo('blog');
+        helper.save();
+        this.transitionTo('helper');
       },
-      destroyBlog(blog) {
-        blog.destroyRecord();
+      destroyHelper(helper) {
+        helper.destroyRecord();
         this.transitionTo('index');
       }
-    }  
+    }
 });
