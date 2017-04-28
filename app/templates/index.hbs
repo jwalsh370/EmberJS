@@ -1,9 +1,10 @@
-<h1>Welcome</h1>
+
 <hr>
 <h2>Tech Helper</h2>
 <ol>
-  {{#each model.helper as |helper|}}
+  {{#each model.helpers as |helper|}}
     {{helper-tile helper=helper}}
   {{/each}}
 </ol>
 <hr>
+{{new-helper saveHelper="saveHelper"}}
