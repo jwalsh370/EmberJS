@@ -17,6 +17,15 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      apiKey: "AIzaSyDAYhZ2Q6WiEQq97JsqSXWF0Ivd6X5xlRg",
+     authDomain: "techhelper-a82de.firebaseapp.com",
+     databaseURL: "https://techhelper-a82de.firebaseio.com",
+     projectId: "techhelper-a82de",
+     storageBucket: "techhelper-a82de.appspot.com",
+  },
+
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
