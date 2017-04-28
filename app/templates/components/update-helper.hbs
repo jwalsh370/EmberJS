@@ -1,0 +1,20 @@
+{{#if updateHelperForm}}
+  <h4>Update {{helper.name}}'s {{helper.question}}</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        {{input value=name id="name" placeholder=helper.name}}
+      </div>
+
+      <div class="form-group">
+        <label for="question">Question</label>
+        {{input value=question id="question" placeholder=helper.question}}
+      </div>
+
+      <hr><button {{action 'updateHelper' helper}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updateHelperForm'}}>Update</button>
+{{/if}}
