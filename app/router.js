@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('helper', {path: '/helper/:helper_id'});
+  this.route('answer');
 });
 
 export default Router;

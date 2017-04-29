@@ -10,5 +10,9 @@
   "name": "Atreyu Montoya",
   "question": "How can I redirect the user from one page to another using JavaScript or jQuery?",
   "answer": "jQuery is not necessary, and window.location.replace(...) will best simulate an HTTP redirect. window.location.replace(...) is better than using window.location.href, because replace() does not keep the originating page in the session history, meaning the user won't get stuck in a never-ending back-button fiasco."
+  }],
+  "answers": [{
+    "name": "",
+    "answer": ""
   }]
 }

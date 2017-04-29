@@ -1,0 +1,8 @@
+<h1>{{answer.name}}'s Answer</h1>
+<hr>
+<h4>Answer: {{answer.answer}}</h4>
+
+<hr>
+{{update-answer answer=answer update="update"}}
+<br>
+<button {{action 'delete' answer}}>Delete</button>
