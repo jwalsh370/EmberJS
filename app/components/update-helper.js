@@ -8,7 +8,6 @@ export default Ember.Component.extend({
       this.set('updateHelperForm', true);
     },
     updateHelper(helper) {
-      // debugger;
       var params = {
         name: this.get('name'),
         question: this.get('question'),

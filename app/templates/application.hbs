@@ -2,13 +2,34 @@
   <header class= "jumbotron">
     <h1>Tech Helper</h1>
   </header>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Tech Helper</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <!-- <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="/helper/:helper_id">Helpers
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/helper/:helper_id">{{helper.name}}</a></li>
+          <li><a href="/helper/:helper_id">{{helper.name}}</a></li>
+          <li><a href="/helper/:helper_id">{{helper.name}}</a></li>
+        </ul>
+      </li> -->
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
     {{outlet}}
-  <footer>
+  <!-- <footer>
     <hr>
     {{#link-to 'index'}}Home{{/link-to}}
     <br>
     {{#link-to 'about'}}About{{/link-to}}
     <br>
     {{#link-to 'contact'}}Contact{{/link-to}}
-  </footer>
+  </footer> -->
 </div>
