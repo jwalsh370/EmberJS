@@ -22,13 +22,13 @@ export default Ember.Route.extend({
         this.transitionTo('index');
       },
       saveAnswer(params) {
-      var newAnswer = this.store.createRecord('answer', params);
+      var firstAnswer = this.store.createRecord('answer', params);
       var helper = params.helper;
-      helper.get('answers').addObject(newAnswer);
-      newAnswer.save().then(function() {
+      helper.get('answers').addObject(firstAnswer);
+      firstAnswer.save().then(function() {
         return helper.save();
       });
-      this.transitionTo('helper', helper);
+      this.transitionTo('helper');
     }
     }
 });

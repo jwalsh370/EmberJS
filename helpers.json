@@ -7,9 +7,5 @@
 }, {
   "name": "Atreyu Montoya",
   "question": "How can I redirect the user from one page to another using JavaScript or jQuery?"
-  }],
-  "answers": [{
-    "newName":"",
-    "newAnswer":""
   }]
 }

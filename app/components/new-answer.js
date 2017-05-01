@@ -8,8 +8,8 @@ export default Ember.Component.extend({
     },
     saveAnswer() {
       var params = {
-        name: this.get('name'),
-        answer: this.get('answer'),
+        newName: this.get('newName'),
+        newAnswer: this.get('newAnswer'),
         helper: this.get('helper')
       };
       this.set('addNewAnswer', false);

@@ -115,6 +115,7 @@ body {
 body{
   background-color: silver;
   border: 2px solid black;
+  font-size: 1.5em;
 }
 
 body, html{
