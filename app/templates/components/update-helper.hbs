@@ -9,7 +9,7 @@
 
       <div class="form-group">
         <label for="question">Question</label>
-        {{input value=question id="question" placeholder=helper.question}}
+        {{textarea class="form-control"  value=question id="question" placeholder=helper.question}}
       </div>
 
       <hr><button {{action 'updateHelper' helper}}>Save</button>

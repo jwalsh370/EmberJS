@@ -1,24 +1,22 @@
 
 {{helper-details helper=model destroyHelper="destroyHelper"}}
-
-{{update-helper helper=model updateHelper="updateHelper"}}<hr>
-
-
-
-{{new-answer saveAnswer="saveAnswer" helper=model}}
+{{update-helper helper=model updateHelper="updateHelper"}}<br>
 
 
 {{#if model.answers}}
-  <h2>Answers</h2>
+  <h2>Here are some answers for your question {{helper.name}}:</h2>
   <hr>
-  <ol>
-    {{#each model.answers as |answer|}}
-      <li>{{answer.newName}} says:<hr>
-        <br>
-        {{answer.newAnswer}}
-        <br>
-        <hr>
-      </li>
-    {{/each}}
-  </ol>
+  <div class="well">
+    <ol>
+      {{#each model.answers as |answer|}}
+        <li><span class=bold>{{answer.newName}} says:</span>
+          <br>
+          {{answer.newAnswer}}
+          <br>
+        </li>
+      {{/each}}
+    </ol>
+  </div>
 {{/if}}
+
+{{new-answer saveAnswer="saveAnswer" helper=model}}

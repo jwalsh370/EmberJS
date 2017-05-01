@@ -1,10 +1,9 @@
-<h2>More information about {{helper.name}}'s question.</h2><hr>
-
-<h3>Tech Helper Details</h3><hr>
-{{helper.question}}
-<hr><br>
+<h2>More information about {{helper.name}}'s question.</h2><br>
 
 
+<div class="well">
+  <p><span class="bold">Question:</span><br>{{helper.question}}</p>
+</div>
 
 
-<button {{action 'delete' helper}}>Delete</button><hr>
+<button {{action 'delete' helper}}>Delete</button>
