@@ -1,14 +1,14 @@
 {{#if updateAnswerForm}}
-<h1>Update {{answer.name}}</h1>
+<h1>Update {{answer.newName}}</h1>
 <div>
   <form>
     <div class="form-group">
-      <label for="name">Name</label>
-      {{input value=name id="name" placeholder=answer.name}}
+      <label for="newName">Name</label>
+      {{input value=newName id="newName" placeholder=answer.newName}}
     </div>
     <div class="form-group">
-      <label for="answer">Answer</label>
-      {{input value=answer id="answer" placeholder=answer.answer}}
+      <label for="newAnswer">Answer</label>
+      {{input value=newAnswer id="newAnswer" placeholder=answer.newAnswer}}
     </div>
     <button {{action 'update'}}>Save</button>
   </form>
