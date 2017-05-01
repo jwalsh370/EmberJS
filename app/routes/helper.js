@@ -22,7 +22,6 @@ export default Ember.Route.extend({
         this.transitionTo('index');
       },
       saveAnswer(params) {
-        debugger;
       var firstAnswer = this.store.createRecord('answer', params);
       var helper = params.helper;
       helper.get('answers').addObject(firstAnswer);
@@ -31,5 +30,5 @@ export default Ember.Route.extend({
       });
       this.transitionTo('helper');
     }
-    }
+  }
 });
