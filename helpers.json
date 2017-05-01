@@ -1,18 +1,15 @@
 {"helpers": [{
   "name": "Tony T.",
-  "question": "I see that on lot of Ember-cli projects jQuery is called with Ember.$() instead of $(). Is there a specific reason?",
-  "answer": "Usually Ember has been imported already, and by using Ember.$ you avoid referencing a global dependency. It's not actually that great an idea, and you can actually import jQuery directly."
-}, {
+  "question": "I see that on lot of Ember-cli projects jQuery is called with Ember.$() instead of $(). Is there a specific reason?"},
+  {
   "name": "Marsha Reed",
-  "question": "when I want to add a package (and check in the dependency into git), where does it belong - into package.json or into bower.json?",
-  "answer": "The things are changing so fast that if it's late 2017 this answer might not be up to date anymore! Beginners can quickly get lost in choice of build tools and workflows, but what's most up to date in 2016 is not using Bower, Grunt or Gulp at all! With help of Webpack you can do everything directly in NPM!"
+  "question": "when I want to add a package (and check in the dependency into git), where does it belong - into package.json or into bower.json?"
 }, {
   "name": "Atreyu Montoya",
-  "question": "How can I redirect the user from one page to another using JavaScript or jQuery?",
-  "answer": "jQuery is not necessary, and window.location.replace(...) will best simulate an HTTP redirect. window.location.replace(...) is better than using window.location.href, because replace() does not keep the originating page in the session history, meaning the user won't get stuck in a never-ending back-button fiasco."
+  "question": "How can I redirect the user from one page to another using JavaScript or jQuery?"
   }],
   "answers": [{
-    "name": "",
-    "answer": ""
+    "newName":"",
+    "newAnswer":""
   }]
 }

@@ -5,7 +5,7 @@ export default Ember.Route.extend({
   model() {
     return Ember.RSVP.hash({
       helpers: this.store.findAll('helper'),
-      // helpers: this.store.findRecord('helper', params.helper_id)
+      answer: this.store.findAll('answer')
     });
   },
 

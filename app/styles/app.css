@@ -116,3 +116,8 @@ body{
   background-color: silver;
   border: 2px solid black;
 }
+
+body, html{
+  height: 100%;
+  width: auto;
+}

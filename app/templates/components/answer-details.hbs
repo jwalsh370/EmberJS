@@ -1,8 +1,6 @@
-<h1>{{answer.name}}'s Answer</h1>
+<h1>{{answer.newName}}'s Answer</h1>
 <hr>
-<h4>Answer: {{answer.answer}}</h4>
+<h4>Answer: {{answer.newAnswer}}</h4><hr>
 
-<hr>
-{{update-answer answer=answer update="update"}}
-<br>
-<button {{action 'delete' answer}}>Delete</button>
+
+<button {{action 'delete' answer}}>Delete Answer</button>

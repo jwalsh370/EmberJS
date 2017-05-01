@@ -11,7 +11,6 @@ export default Ember.Component.extend({
       var params = {
         name: this.get('name'),
         question: this.get('question'),
-        answer: this.get('answer'),
       };
       this.set('updateHelperForm', false);
       this.sendAction('updateHelper', helper, params);
