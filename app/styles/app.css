@@ -114,7 +114,7 @@ body {
 
 body{
   background-color: silver;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   font-size: 1.5em;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -126,6 +126,7 @@ body, html{
 button {
   color: purple;
   border: black 2.3px solid;
+  float:left;
 }
 
 p,li {
